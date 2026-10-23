@@ -1,17 +1,23 @@
 <!doctype html>
 <html>
  <head>
+    <audio id="audio" src="meow-1.mmp3"></audio>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>my first website</title>
+  <title>KITU's testing place</title>
+  <script>
+    function playSound() {
+      document.getElementById("audio").play();
+    }
+  </script>
  </head>
 <body>
   <div>
     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AaQTn5bdaxaT3QfBrIol0QHaGq%3Fpid%3DApi&f=1&ipt=9d6cf0f109007cdf9c88aa00fc9b3dfd88e9bdb2e71cb143c6c6f383d2b26473&ipo=images" 
         alt="A foto de um gato ragdoll jovem"
         class="kitten" />
-    <h1 class="batata"><strong>cute kitty so cute oh my goddddd</strong></h1>
-     <h2 class="seila">more kitty more kittyyy i want moreeee</h2>
+    <button class="batata"><strong>cute kitty so cute oh my goddddd</strong></button>
+     <button class="seila" onclick="window.location.href='https://www.youtube.com/watch?v=XfELJU1mRMg'">more kitty more kittyyy i want moreeee</button>
       <img src="https://cdn.discordapp.com/attachments/1243279915059773511/1562521290659729509/cat-begging.gif?ex=6adcedd9&is=6adb9c59&hm=45e2d40a35d2c1723b39775fa69d27f59d922099fd7168700f9a872fcd3bec37&" alt="a figurinha de um gato" title="AAAAAAAAAAAAHHHJHHHH CAT" class="robert" />
   </div>
     <style>
@@ -19,46 +25,52 @@
       background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F31377.jpg&f=1&nofb=1&ipt=58ffb73b3792c6921cc90e68707238e1e1881fd741f84c7501eb92a6de3a0b99&ipo=images);
     }
     .kitten {
-     border-radius: 6px !important;
+     border-radius: 6px;
      border: 2px solid #dbdbdb;
      height: auto;
      width: 300px;
-     box-shadow: 0 0 10px #dbdbdb;
+     position: fixed;
+     top: 30px;
+     left: 60px;
+     box-shadow: 0 0 10px #111111;
     } 
     .robert {
-     border-radius: 6px !important;
+     border-radius: 6px;
      border: 2px solid #dbdbdb;
      height: 200px;
      width: 300px;
      position: fixed;
-     bottom: 5px;
-     box-shadow: 0 0 10px #dbdbdb;
+     bottom: 120px;
+     left: 60px;
+     box-shadow: 0 0 10px #111111;
     } 
     .batata {
-     box-shadow: 0 0 10px #dbdbdb;
+     box-shadow: 0 0 10px #111111;
      border-radius: 6px;
      padding: 5px;
      backdrop-filter: blur(6px);
+     background: transparent;
      font-family: sans-serif;
-     width: 600px;
+     width: 700px;
      height: 40px;
      color: #dbdbdb;
      position: fixed;
-     top: 80px;
+     top: 120px;
      right: 50px;
     }
      .seila {
-     box-shadow: 0 0 10px #dbdbdb;
+     box-shadow: 0 0 10px #111111;
      border-radius: 6px;
      padding: 5px;
      backdrop-filter: blur(6px);
      font-family: sans-serif;
-     width: 600px;
+     width: 700px;
      height: 40px;
      color: #dbdbdb;
      position: fixed;
+     background: transparent;
      right: 50px;
-     bottom: 50px;
+     bottom: 200px;
     }
     div {
      display: flex;
@@ -66,7 +78,7 @@
      align-items: center;
     }
      .batata:hover, .seila:hover {
-     width: 700px;
+     width: 800px;
      height: 40px;
      transition: width 0.5s;
      }
@@ -74,3 +86,4 @@
   </body>
 <html>
 <!-- MEUDEUS QUE DIFICULDADE PRA POR COMENTÁRIO HTML É UM LIXO -->
+
