@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <audio src="./mario-meow.mp3" id="meow"></audio>
+  <script>
+    function pet() {
+      document.getElementById("meow").play;
+      }
+  </script>
+  <title>kitten galaxy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <style>
@@ -14,6 +21,7 @@
         radial-gradient(1px 2px at 150px 110px, #e4c9ff, transparent);
         background-size: 200px 150px;
         background-repeat: repeat;
+        justify-content: center;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -21,7 +29,7 @@
         .button1 {
         background: #ef7c7e;
         font-family:  Comic Neue;
-        font-size: 100%;
+        font-size: 3vh;
         color: #7a213a;
         width: 90%;
         height: 10%; 
@@ -36,54 +44,83 @@
            transition: transform 0.2s ease-out;
         }
         .container {
+          margin: 0 auto;
           display: flex;
           align-items: center;
           flex-direction: column;
           position: relative;
-          min-height: 100;
-          top: 50px;
-          width: 25%;
-          height: 500px;
+          top: 150px;
+          width: 35%;
+          height: 700px;
           border-radius: 20px;
           box-shadow: 0 0 15px #0d0411;
           background: #2a2335;
           color: #dddddd;
           }
-        @media (max-width: 1024px) {
+       .kitten {
+            position: relative;
+            bottom: 6%;
+            margin: 5% auto;
+            width: 15%;
+            height: auto;
+            }
+        @media (max-width: 1500px) and (min-width: 1000px) {
           .container {
-            width: 60%;
-            height: 500px;
+            width: 40%;
+            height: 600px;
           }
-        @media (max-width: 600px) {
+      }
+        @media (max-width: 1200px) and (min-width: 1000px) {
           .container {
-            width: 75%;
-            height: 450px;
-          }
-        @media (max-width: 300px) {
-          .container {
-            width: 75%;
-            height: 400px;
-          }
-          .button1 {
-            top: 85%
+            width: 35%;
+            height: 425px;
           }
         }
-      }
-        .kitten {
-          width: 75%;
-          height: auto;
-          position: absolute;
-          top: 15%;
-          left: 13%;
+        @media (max-width: 1000px) and (min-width: 670px) {
+          .container {
+            width: 60%;
+            height: 600px;
+          }
+        }
+        @media (max-width: 670px) and (min-width: 500px) {
+          .container {
+            width: 90%;
+            height: 540px;
+          }
+        }
+        @media (max-width: 500px) and (min-width: 460px) {
+          .container {
+            width: 90%;
+            height: 420px;
+          }
+        }
+        @media (max-width: 460px) and (min-width: 350px) {
+          .container {
+            width: 60%;
+            height: 260px;
+          }
+        }
+        @media (max-width: 350px) and (min-width: 50px) {
+          .container {
+            width: 90%;
+            height: 310px;
+          }
+        }
+        .text1 {
+          font-family: Comic Neue;
+          position: relative;
+          margin: 0 auto;
           }
    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="container">
-      <p>NOT FUNCTIONING YET!</p>
-      <div class="image"><img class="kitten" src="https://github.com/kitu-lab/kitten-galaxy.github.io/blob/main/kitten.clicker.png?raw=true"></div>
-      <button class="button1">click</button>
+      <div>
+        <h1 class="text1" style="font-size:4vw;">kitten.clicker.com</h1>
+        </div>
+      <img class="kitten" style="width:100%;" src="https://github.com/kitu-lab/kitten-galaxy.github.io/blob/main/kitten.clicker.png?raw=true">
+      <button class="button1" onclick="pet()">pet</button>
     </div> 
   </body>
 </html>
