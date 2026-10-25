@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <audio class="sound" id="audio" src="meow-1.mp3"></audio>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>KITU's testing place</title>
-  <script>
-    function playSound() {
-      document.getElementById("audio").play();
-    }
-  </script>
- </head>
-<body>
-  <div>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AaQTn5bdaxaT3QfBrIol0QHaGq%3Fpid%3DApi&f=1&ipt=9d6cf0f109007cdf9c88aa00fc9b3dfd88e9bdb2e71cb143c6c6f383d2b26473&ipo=images" 
-        alt="A foto de um gato ragdoll jovem"
-        class="kitten" />
-    <button class="batata" onclick="playSound()"><strong>cute kitty so cute oh my goddddd</strong></button>
-     <button class="seila" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">more kitty more kittyyy i want moreeee</button>
-      <img src="https://cdn.discordapp.com/attachments/1243279915059773511/1562521290659729509/cat-begging.gif?ex=6adcedd9&is=6adb9c59&hm=45e2d40a35d2c1723b39775fa69d27f59d922099fd7168700f9a872fcd3bec37&" alt="a figurinha de um gato" title="AAAAAAAAAAAAHHHJHHHH CAT" class="robert" />
-  </div>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <style>
-    body {
-      background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F31377.jpg&f=1&nofb=1&ipt=58ffb73b3792c6921cc90e68707238e1e1881fd741f84c7501eb92a6de3a0b99&ipo=images);
-    }
-     .kitten {
-     border-radius: 6px;
-     border: 2px solid #dbdbdb;
-     height: auto;
-     width: 40%;
-     position: fixed;
-     top: 30px;
-     left: 60px;
-     box-shadow: 0 0 10px #111111;
-    }
-    .robert {
-     border-radius: 6px;
-     border: 2px solid #dbdbdb;
-     height: 200px;
-     width: 40%;
-     position: fixed;
-     bottom: 120px;
-     left: 60px;
-     box-shadow: 0 0 10px #111111;
-    } 
-    .batata {
-     box-shadow: 0 0 10px #111111;
-     border-radius: 6px;
-     padding: 5px;
-     backdrop-filter: blur(6px);
-     background: transparent;
-     font-family: sans-serif;
-     width: 90%;
-     height: 40px;
-     color: #dbdbdb;
-     position: fixed;
-     top: 120px;
-     right: 50px;
-    }
-     .seila {
-     box-shadow: 0 0 10px #111111;
-     border-radius: 6px;
-     padding: 5px;
-     backdrop-filter: blur(6px);
-     font-family: sans-serif;
-     width: 90%;
-     height: 40px;
-     color: #dbdbdb;
-     position: fixed;
-     background: transparent;
-     right: 50px;
-     bottom: 200px;
-    }
-    div {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-    }
-     .batata:hover, .seila:hover {
-     width: 800px;
-     height: 40px;
-     transition: width 0.5s;
-     }
-    </style>
+      body {
+        background: #171221;
+        background-image:
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(1px 2px at 72px 85px, #b9c8ff, transparent),
+        radial-gradient(2px 2px at 120px 39px, white, transparent),
+        radial-gradient(1px 2px at 150px 110px, #e4c9ff, transparent);
+        background-size: 200px 150px;
+        background-repeat: repeat;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+        .button1 {
+        background: #ef7c7e;
+        font-family:  Comic Neue;
+        font-size: 100%;
+        color: #7a213a;
+        width: 90%;
+        height: 10%; 
+        border: none;
+        position: absolute;
+        transition: 0.5s ease-out;
+        border-radius: 15px;
+        top: 85%;
+        }
+        .button1:hover {
+           transform:  scale(1.06);
+           transition: transform 0.2s ease-out;
+        }
+        .container {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          min-height: 100;
+          top: 50px;
+          width: 25%;
+          height: 500px;
+          border-radius: 20px;
+          box-shadow: 0 0 15px #0d0411;
+          background: #2a2335;
+          color: #dddddd;
+          }
+        @media (max-width: 1024px) {
+          .container {
+            width: 60%;
+            height: 500px;
+          }
+        @media (max-width: 600px) {
+          .container {
+            width: 60%;
+            height: 480px;
+          }
+        @media (max-width: 300px) {
+          .container {
+            width: 75%;
+            height: 400px;
+          }
+          .button1 {
+            top: 85%
+          }
+        }
+      }
+        .kitten {
+          width: 75%;
+          height: auto;
+          position: absolute;
+          top: 15%;
+          left: 13%;
+          }
+   </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <p>NOT FUNCTIONING YET!</p>
+      <div class="image"><img class="kitten" src="https://github.com/kitu-lab/kitten-galaxy.github.io/blob/main/kitten.clicker.png?raw=true"></div>
+      <button class="button1">click</button>
+    </div> 
   </body>
-<html>
-<!-- MEUDEUS QUE DIFICULDADE PRA POR COMENTÁRIO HTML É UM LIXO -->
+</html>
