@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="icon" type="image/png" href="https://github.com/kitu-lab/kitu-lab.github.io/blob/main/kitteng.png?raw=true">
+  <link rel="icon" type="image/png" href="https://github.com/kitu-lab/kitu-lab.github.io/blob/main/kitten.png?raw=true">
   <audio src="https://raw.githubusercontent.com/kitu-lab/kitu-lab.github.io/refs/heads/main/mario-meow.mp3" id="meow"></audio>
   <script>
   let clickAmount = 0
@@ -27,14 +27,12 @@
           flex-direction: column;
         }
         .estrelas {
-          animation: flutuar 20s linear infinite alternate;
+          animation: flutuar 100s linear infinite;
           z-index: -1;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          height: 100vh;
+          pointer-events: none;
+          position: fixed;
+          height: 10000vh;
           width: 100vw;
-          position: static;
           background-image:
           radial-gradient(2px 2px at 22px 35px, white, transparent),
           radial-gradient(1px 1px at 72px 85px, #b9c8ff, transparent),
@@ -44,20 +42,18 @@
           radial-gradient(1px 2px at 73px 87px, #b9c8ff, transparent),
           radial-gradient(2px 2px at 420px 394px, white, transparent),
           radial-gradient(1px 2px at 127px 119px, #e4c9ff, transparent);
-          background-size: 200px 150px;
+          background-size: 300px 150px;
           background-repeat: repeat;
           }
-      @keyframes flutuar {
-        from {
-          transform: translateY(0);
-          opacity: 0.6;
-          }
+        @keyframes flutuar {
+    from {
+        background-position-y: 0;
+    }
 
-        to {
-         transform: translateY(-650px);
-         opacity: 1;
-         }
-      }
+    to {
+        background-position-y: -10000px;
+    }
+}
         .button1 {
         background: #ef7c7e;
         font-family:  Comic Neue;
@@ -75,6 +71,11 @@
            transform:  scale(1.06);
            transition: transform 0.2s ease-out;
         }
+        .button1:active {
+            background: #ef7c7ecc;
+            transform: scale(0.99);
+            transition: transform 0.01 ease-out;
+            }
         .container {
           margin: 0 auto;
           display: flex;
@@ -158,6 +159,7 @@
           margin: 0 auto;
           }
         .pet-count {
+          font-family: Comic Neue;
           position: relative;
           }
    </style>
